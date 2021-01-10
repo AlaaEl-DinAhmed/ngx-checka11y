@@ -1,27 +1,40 @@
 # NgxChecka11y
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
+An Angular package wrapping [Checka11y.css](https://github.com/jackdomleo7/Checka11y.css "Checka11y.css") during the development process to quickly highlight some common accessibility errors and warnings that can be easily and quickly rectified.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Using npm
 
-## Code scaffolding
+`npm install ngx-checka11y --save-dev`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Using yarn
 
-## Build
+`yarn add ngx-checka11y --dev`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+---
 
-## Running unit tests
+## Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> Add CheckA11yModule to your app.module.ts and inject a provider for the environment to be avialable to the ngx-checka11y package.
 
-## Running end-to-end tests
+```javascript
+import { CheckA11yModule } from "ngx-checka11y";
+import { environment } from "../environments/environment";
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```javascript
+@NgModule({
+  imports: [
+      ...,
+      CheckA11yModule
+    ],
+  providers: [{ provide: 'environment', useValue: environment }],
+})
+```
 
-## Further help
+Add `appCheckA11y` directive to whatever `html` element
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+or
+
+`<ng-container appCheckA11y></ng-container>` in `app.component.html` or whatever `component` you want.
