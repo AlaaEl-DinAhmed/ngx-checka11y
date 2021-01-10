@@ -15,9 +15,7 @@ export class CheckA11yDirective implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    if (!this.environment.production) {
-      this.checkA11yLinkInit();
-    }
+    if (!this.environment.production) this.checkA11yLinkInit();
   }
 
   checkA11yLinkInit(): void {

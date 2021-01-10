@@ -1,24 +1,40 @@
 # NgxChecka11y
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
+An Angular package wrapping [Checka11y.css](https://github.com/jackdomleo7/Checka11y.css "Checka11y.css") during the development process to quickly highlight some common accessibility errors and warnings that can be easily and quickly rectified.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name --project ngx-checka11y` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-checka11y`.
-> Note: Don't forget to add `--project ngx-checka11y` or else it will be added to the default project in your `angular.json` file. 
+Using npm
 
-## Build
+`npm install ngx-checka11y --save-dev`
 
-Run `ng build ngx-checka11y` to build the project. The build artifacts will be stored in the `dist/` directory.
+Using yarn
 
-## Publishing
+`yarn add ngx-checka11y --dev`
 
-After building your library with `ng build ngx-checka11y`, go to the dist folder `cd dist/ngx-checka11y` and run `npm publish`.
+---
 
-## Running unit tests
+## Usage
 
-Run `ng test ngx-checka11y` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> Add CheckA11yModule to your app.module.ts and inject a provider for the environment to be avialable to the ngx-checka11y package.
 
-## Further help
+```javascript
+import { CheckA11yModule } from "ngx-checka11y";
+import { environment } from "../environments/environment";
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```javascript
+@NgModule({
+  imports: [
+      ...,
+      CheckA11yModule
+    ],
+  providers: [{ provide: 'environment', useValue: environment }],
+})
+```
+
+Add `appCheckA11y` directive to whatever `html` element
+
+or
+
+`<ng-container appCheckA11y></ng-container>` in `app.component.html` or whatever `component` you want.

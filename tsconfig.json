@@ -15,10 +15,7 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
     "paths": {
       "ngx-checka11y": [
         "dist/ngx-checka11y/ngx-checka11y",
@@ -27,6 +24,7 @@
     }
   },
   "angularCompilerOptions": {
+    "enableIvy": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
