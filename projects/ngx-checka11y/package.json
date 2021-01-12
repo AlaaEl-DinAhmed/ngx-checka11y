@@ -1,6 +1,6 @@
 {
   "name": "ngx-checka11y",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^11.0.6",
     "@angular/core": "^11.0.6"

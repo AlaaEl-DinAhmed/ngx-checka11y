@@ -1,21 +1,20 @@
 import { DOCUMENT } from '@angular/common';
 import { AfterViewInit, Directive, Inject } from '@angular/core';
 
+// @dynamic
 @Directive({
-  selector: '[appCheckA11y]',
+  selector: '[ngxCheckA11y]',
 })
 export class CheckA11yDirective implements AfterViewInit {
-  environment: any;
   constructor(
-    @Inject('environment')
-    environment: any,
-    @Inject(DOCUMENT) private document: any
-  ) {
-    this.environment = environment;
-  }
+    @Inject('environment') private environment: { production: boolean },
+    @Inject(DOCUMENT) private document: Document
+  ) {}
 
   ngAfterViewInit(): void {
-    if (!this.environment.production) this.checkA11yLinkInit();
+    if (!this.environment.production) {
+      this.checkA11yLinkInit();
+    }
   }
 
   checkA11yLinkInit(): void {

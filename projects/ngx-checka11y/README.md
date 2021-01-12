@@ -1,4 +1,4 @@
-# NgxChecka11y
+# ngxChecka11y
 
 An Angular package wrapping [Checka11y.css](https://github.com/jackdomleo7/Checka11y.css "Checka11y.css") during the development process to quickly highlight some common accessibility errors and warnings that can be easily and quickly rectified.
 
@@ -33,8 +33,12 @@ import { environment } from "../environments/environment";
 })
 ```
 
-Add `appCheckA11y` directive to whatever `html` element
+Add ngxCheckA11y directive to whatever HTML element
 
 or
 
-`<ng-container appCheckA11y></ng-container>` in `app.component.html` or whatever `component` you want.
+```javascript
+<ng-container ngxCheckA11y></ng-container>
+```
+
+in the app.component.html or whatever component you want.
