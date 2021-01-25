@@ -1,9 +1,10 @@
 {
   "name": "ngx-checka11y",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "peerDependencies": {
     "@angular/common": "^11.0.6",
-    "@angular/core": "^11.0.6"
+    "@angular/core": "^11.0.6",
+    "checka11y-css": "1.2.0"
   },
   "repository": {
     "type": "git",

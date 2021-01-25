@@ -1,5 +1,7 @@
-import { DOCUMENT } from '@angular/common';
 import { AfterViewInit, Directive, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+
+declare const require: any;
 
 // @dynamic
 @Directive({
@@ -13,17 +15,14 @@ export class CheckA11yDirective implements AfterViewInit {
 
   ngAfterViewInit(): void {
     if (!this.environment.production) {
-      this.checkA11yLinkInit();
+      this.addChecka11yStyle();
     }
   }
 
-  checkA11yLinkInit(): void {
-    const styleLink: HTMLElement = this.document.createElement('link');
-    styleLink.setAttribute('rel', 'stylesheet');
-    styleLink.setAttribute(
-      'href',
-      'https://cdn.jsdelivr.net/npm/checka11y-css/checka11y.css'
-    );
-    this.document.head.appendChild(styleLink);
+  addChecka11yStyle(): void {
+    const checka11yCss = require('node_modules/checka11y-css/checka11y.css');
+    const style: HTMLElement = this.document.createElement('style');
+    style.innerHTML = `${checka11yCss.default}`;
+    this.document.head.appendChild(style);
   }
 }
