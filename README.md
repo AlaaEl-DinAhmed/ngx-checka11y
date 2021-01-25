@@ -6,9 +6,13 @@ An Angular package wrapping [Checka11y.css](https://github.com/jackdomleo7/Check
 
 Using npm
 
+`npm i checka11y-css@1.2.0`
+
 `npm install ngx-checka11y --save-dev`
 
 Using yarn
+
+`yarn add checka11y-css@1.2.0 --dev`
 
 `yarn add ngx-checka11y --dev`
 
