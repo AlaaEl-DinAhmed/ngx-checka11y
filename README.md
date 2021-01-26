@@ -1,4 +1,8 @@
+<div align="center">
+
 ![GitHub Repo stars](https://img.shields.io/github/stars/AlaaEl-DinAhmed/ngx-checka11y?style=social) ![npm](https://img.shields.io/npm/v/ngx-checka11y) ![npm bundle size](https://img.shields.io/bundlephobia/min/ngx-checka11y) ![npm](https://img.shields.io/npm/dw/ngx-checka11y)
+
+</div>
 
 ---
 
