@@ -1,3 +1,7 @@
+![GitHub Repo stars](https://img.shields.io/github/stars/AlaaEl-DinAhmed/ngx-checka11y?style=social) ![npm](https://img.shields.io/npm/v/ngx-checka11y) ![npm bundle size](https://img.shields.io/bundlephobia/min/ngx-checka11y) ![npm](https://img.shields.io/npm/dw/ngx-checka11y)
+
+---
+
 # ngxChecka11y
 
 An Angular package wrapping [Checka11y.css](https://github.com/jackdomleo7/Checka11y.css "Checka11y.css") during the development process to quickly highlight some common accessibility errors and warnings that can be easily and quickly rectified.
@@ -6,7 +10,7 @@ An Angular package wrapping [Checka11y.css](https://github.com/jackdomleo7/Check
 
 Using npm
 
-`npm i checka11y-css@1.2.0`
+`npm i checka11y-css@1.2.0 --save-dev`
 
 `npm install ngx-checka11y --save-dev`
 
