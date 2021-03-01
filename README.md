@@ -1,5 +1,7 @@
 <div align="center">
 
+![Checka11y.css logo](projects/ngx-checka11y/assets/checka11ycssforangular.jpeg)
+
 ![GitHub Repo stars](https://img.shields.io/github/stars/AlaaEl-DinAhmed/ngx-checka11y?style=social) ![npm](https://img.shields.io/npm/v/ngx-checka11y) ![npm bundle size](https://img.shields.io/bundlephobia/min/ngx-checka11y) ![npm](https://img.shields.io/npm/dw/ngx-checka11y)
 
 </div>
@@ -14,15 +16,11 @@ An Angular package wrapping [Checka11y.css](https://github.com/jackdomleo7/Check
 
 Using npm
 
-`npm i checka11y-css@1.2.0 --save-dev`
-
-`npm install ngx-checka11y --save-dev`
+`npm i checka11y-css@1.3.2 --save-dev`
 
 Using yarn
 
-`yarn add checka11y-css@1.2.0 --dev`
-
-`yarn add ngx-checka11y --dev`
+`yarn add checka11y-css@1.3.2 --dev`
 
 ---
 
