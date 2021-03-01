@@ -1,3 +1,9 @@
+<div align="center">
+
+![Checka11y.css logo](assets/checka11ycssforangular.jpeg)
+
+</div>
+
 # ngxChecka11y
 
 An Angular package wrapping [Checka11y.css](https://github.com/jackdomleo7/Checka11y.css "Checka11y.css") during the development process to quickly highlight some common accessibility errors and warnings that can be easily and quickly rectified.
